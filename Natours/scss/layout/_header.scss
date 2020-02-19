@@ -23,39 +23,3 @@
     text-align: center;
   }
 }
-
-.heading-primary {
-  color: $color-white;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 6rem;
-  &__main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation: moveInLeft 0.75s ease-out;
-  }
-  &__sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 2.2rem;
-    animation: moveInRight 0.75s ease-out;
-  }
-}
-
-// @import 'abstracts/functions';
-// @import 'abstracts/mixins';
-// @import 'abstracts/variables';
-
-// @import 'base/base';
-// @import 'base/animations';
-// @import 'base/typography';
-// @import 'base/utilities';
-
-// @import 'components/button';
-
-// @import 'layout/header'
-
-// @import 'pages/home';
