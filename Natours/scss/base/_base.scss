@@ -1,4 +1,6 @@
-* {
+*,
+*:after,
+*:before {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -10,7 +12,5 @@ html {
 }
 
 body {
-  font-family: 'Lato', 'sans-serif';
   box-sizing: border-box;
-  padding: 3rem;
 }
