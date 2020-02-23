@@ -255,7 +255,15 @@ body {
     position: absolute;
     text-align: right;
     top: 12rem;
-    right: 2rem; }
+    right: 2rem;
+    width: 70%; }
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 0, 115, 0.85)); }
 
 .header {
   height: 95vh;
