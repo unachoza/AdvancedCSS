@@ -216,7 +216,7 @@ body {
     height: 50rem;
     color: white;
     font-size: 4rem;
-    transition: all 0.7s ease;
+    transition: all 1s ease;
     position: absolute;
     top: 0;
     left: 0;
@@ -230,7 +230,7 @@ body {
       background-img: linear-gradiant;
       transform: rotateY(180deg); }
   .card:hover .card__side--front {
-    transform: rotateY(180deg); }
+    transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
 
