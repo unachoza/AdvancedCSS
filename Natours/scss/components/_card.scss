@@ -38,18 +38,32 @@
   &__picture {
     background-size: cover;
     height: 23rem;
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     &--1 {
       background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
         url(../img/nat-5.jpg);
-      background-blend-mode: screen;
-      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
--webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     }
+
     &--2 {
-      background-image: url(../img/nat-6.jpg);
+      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+        url(../img/nat-6.jpg);
     }
     &--3 {
-      background-image: url(../img/nat-7.jpg);
+      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+        url(../img/nat-7.jpg);
     }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $color-white;
+    position: absolute;
+    text-align: right;
+    top: 12rem;
+    right: 2rem;
   }
 }
