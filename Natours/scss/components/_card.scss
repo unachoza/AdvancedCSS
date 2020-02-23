@@ -3,7 +3,7 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem;
+  height: 52rem;
 
   &__side {
     background-color: orangered;
@@ -65,12 +65,11 @@
     text-align: right;
     top: 12rem;
     right: 2rem;
-    width: 70%;
+    width: 75%;
   }
 
   &__heading-span {
     padding: 1rem 1.5rem;
-    box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
 
@@ -101,5 +100,27 @@
         }
       }
     }
+  }
+  // BACK SIDE STYLING
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+  &__price-box {
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 8rem;
+  }
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+  }
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
   }
 }

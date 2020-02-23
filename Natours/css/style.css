@@ -107,7 +107,8 @@ body {
   display: inline-block;
   border-radius: 10rem;
   transition: all 0.2s;
-  position: relative; }
+  position: relative;
+  font-size: 1.6rem; }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -210,7 +211,7 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem; }
+  height: 52rem; }
   .card__side {
     background-color: orangered;
     height: 52rem;
@@ -256,10 +257,9 @@ body {
     text-align: right;
     top: 12rem;
     right: 2rem;
-    width: 70%; }
+    width: 75%; }
   .card__heading-span {
     padding: 1rem 1.5rem;
-    box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span--1 {
@@ -277,6 +277,23 @@ body {
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: solid 1px #eee; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card__price-box {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 8rem; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
+  .card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
 
 .header {
   height: 95vh;
