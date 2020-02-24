@@ -46,10 +46,9 @@
     width: 48%;
     display: inline-block;
   }
-&__radio__input {
-display: none;
-
-}
+  &__radio__input {
+    display: none;
+  }
   &__radio__label {
     font-size: $default-font-size;
     cursor: pointer;

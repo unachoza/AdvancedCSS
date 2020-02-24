@@ -22,7 +22,8 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
     outline: none;
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
@@ -38,6 +39,14 @@
   }
   &__pink {
     background-color: $color-secondary-dark;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+  &__green {
+    background-color: $color-primary;
     color: $color-white;
 
     &::after {
