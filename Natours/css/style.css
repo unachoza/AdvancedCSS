@@ -43,7 +43,7 @@ body {
   font-family: 'Lato', 'sans-serif';
   font-weight: 400;
   line-height: 1.7;
-  color: #6e6a6a;
+  color: #777;
   padding: 3rem; }
 
 .heading-primary {
@@ -130,7 +130,7 @@ body {
 
 .btn__white {
   background-color: #fff;
-  color: #6e6a6a; }
+  color: #777; }
   .btn__white::after {
     background-color: #fff; }
 
@@ -285,7 +285,7 @@ body {
       .card__details ul li {
         text-align: center;
         font-size: 1.5rem;
-        color: #6e6a6a;
+        color: #777;
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: solid 1px #eee; }
@@ -384,13 +384,13 @@ body {
   border-bottom: 3px solid transparent;
   width: 90%;
   display: block;
-  transition: all .4s; }
+  transition: all 0.4s; }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     border-bottom: 3px solid #55c57a; }
   .form__input:focus:invalid {
-    border-bottom: 3px solid #ff0073; }
+    border-bottom: 3px solid #ca4343; }
   .form__input::-webkit-input-placeholder {
     color: #999; }
 

@@ -13,7 +13,7 @@
     border-bottom: 3px solid transparent;
     width: 90%;
     display: block;
-transition: all .4s;
+    transition: all 0.4s;
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
@@ -21,7 +21,7 @@ transition: all .4s;
     }
 
     &:focus:invalid {
-      border-bottom: 3px solid $color-secondary-dark;
+      border-bottom: 3px solid $color-invalid;
     }
     &::-webkit-input-placeholder {
       color: $color-grey-dark-2;
@@ -40,6 +40,6 @@ transition: all .4s;
   &__input:placeholder-shown + &__label {
     opacity: 0;
     visibility: hidden;
-transform: translateY(-3rem);
+    transform: translateY(-3rem);
   }
 }
