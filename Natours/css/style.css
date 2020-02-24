@@ -411,6 +411,9 @@ body {
   width: 48%;
   display: inline-block; }
 
+.form__radio__input {
+  display: none; }
+
 .form__radio__label {
   font-size: 1.6rem;
   cursor: pointer;
@@ -425,7 +428,7 @@ body {
   display: inline-block;
   position: absolute;
   left: 0;
-  top: 0; }
+  top: -2; }
   .form__radio-button::after {
     content: '';
     display: block;
@@ -436,7 +439,12 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #55c57a; }
+    background-color: #55c57a;
+    opacity: 0;
+    transition: opacity 0.2s; }
+
+.form__radio__input:checked ~ .form__radio__label .form__radio-button:after {
+  opacity: 1; }
 
 .header {
   height: 95vh;
