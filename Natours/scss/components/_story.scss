@@ -52,7 +52,7 @@
     opacity: 1;
     transform: translate(-50%, -50%);
   }
-  &:hover &_story {
+  &:hover &__img {
     transform: translateX(-4rem) scale(1);
   }
 }
