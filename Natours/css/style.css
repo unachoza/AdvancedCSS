@@ -383,7 +383,8 @@ body {
   border: none;
   border-bottom: 3px solid transparent;
   width: 90%;
-  display: block; }
+  display: block;
+  transition: all .4s; }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -403,7 +404,8 @@ body {
 
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  transform: translateY(-3rem); }
 
 .header {
   height: 95vh;
