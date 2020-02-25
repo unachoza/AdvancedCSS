@@ -484,7 +484,7 @@ body {
     width: 66.6666667%;
     display: table-cell;
     vertical-align: middle;
-    padding: 3rem 5rem; }
+    padding: 0 5rem; }
   .popup__img {
     display: block;
     width: 100%; }
