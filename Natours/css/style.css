@@ -540,11 +540,18 @@ body {
   .navigation__icon::before, .navigation__icon::after {
     content: '';
     position: absolute;
-    left: 0; }
+    left: 0;
+    transition: all 0.2s; }
   .navigation__icon::before {
-    top: -.8rem; }
+    top: -0.8rem; }
   .navigation__icon::after {
-    top: .8rem; }
+    top: 0.8rem; }
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem; }
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem; }
 
 .header {
   height: 95vh;

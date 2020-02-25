@@ -90,7 +90,7 @@
 
   &__icon {
     position: relative;
-margin-top: 3.5rem;
+    margin-top: 3.5rem;
     &,
     &::before,
     &::after {
@@ -105,12 +105,20 @@ margin-top: 3.5rem;
       content: '';
       position: absolute;
       left: 0;
+      transition: all 0.2s;
     }
     &::before {
-      top: -.8rem;
+      top: -0.8rem;
     }
     &::after {
-      top: .8rem;
+      top: 0.8rem;
     }
+  }
+
+  &__button:hover &__icon::before {
+    top: -1rem;
+  }
+  &__button:hover &__icon::after {
+    top: 1rem;
   }
 }
