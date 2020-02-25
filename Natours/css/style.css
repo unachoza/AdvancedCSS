@@ -460,6 +460,8 @@ body {
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
   transition: all .3s; }
   .popup__content {
     position: absolute;
@@ -472,6 +474,7 @@ body {
     border-radius: 3px;
     display: table;
     overflow: hidden;
+    opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all .5s .2s; }
   .popup__left {
@@ -494,6 +497,12 @@ body {
     column-count: 2;
     column-gap: 4rem;
     column-rule: 1px solid #f7f7f7; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
 
 .navigation__checkbox {
   display: none; }
