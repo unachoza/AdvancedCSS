@@ -4,7 +4,8 @@
   "description": "tours website with engaging css",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass scss/main.scss css/style.css -w"
+    "compile:sass": "node-sass scss/main.scss css/style.css -w",
+    "build": "react-scripts build \"npm run compile:sass\""
   },
   "author": "Arianna Choza",
   "license": "ISC",
