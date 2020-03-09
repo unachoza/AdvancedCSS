@@ -11,6 +11,34 @@ html {
 
 body {
   font-family: "Nunito", sans-serif;
-  color: #6D5D4B;
+  color: #6d5d4b;
   font-weight: 300;
   line-height: 1.6; }
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content); }
+
+.sidebar {
+  background-color: #c69963; }
+
+.header {
+  background-color: #54483a; }
+
+.realtors {
+  background-color: #aaa; }
+
+.features {
+  background-color: #101d2c; }
+
+.story__pictures {
+  background-color: #54483a; }
+
+.homes {
+  background-color: #101d2c; }
+
+.gallery {
+  background-color: #6d5d4b; }
+
+.footer {
+  background-color: #b28451; }
