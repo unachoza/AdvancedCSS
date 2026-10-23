@@ -4,7 +4,7 @@
     {
       "name": "natours",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8099", "--directory", "Natours"],
+      "runtimeArgs": ["-m", "http.server", "8099", "--directory", "Nexter"],
       "port": 8099
     }
   ]
