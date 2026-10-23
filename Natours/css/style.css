@@ -9,7 +9,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 @keyframes moveInLeft {
   0% {
@@ -748,3 +749,179 @@ body {
   .book__form {
     width: 50%;
     padding: 5rem; }
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%; }
+
+  body {
+    padding: 0; }
+
+  .header {
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); }
+
+  .heading-primary__main {
+    font-size: 4rem;
+    letter-spacing: 1.5rem; }
+
+  .heading-primary__sub {
+    font-size: 1.6rem;
+    letter-spacing: 0.8rem; }
+
+  .heading-secondary {
+    font-size: 3rem; }
+
+  .navigation__button {
+    top: 3rem;
+    right: 3rem;
+    height: 5.5rem;
+    width: 5.5rem; }
+
+  .navigation__background {
+    top: 3.5rem;
+    right: 3.5rem;
+    height: 4.5rem;
+    width: 4.5rem; }
+
+  .navigation__icon {
+    margin-top: 2.6rem; }
+
+  .navigation__list {
+    width: 75%; }
+
+  .row {
+    max-width: 50rem;
+    padding: 0 3rem; }
+    .row [class^='col-'] {
+      float: none !important;
+      width: 100% !important; }
+      .row [class^='col-']:not(:last-child) {
+        margin-right: 0 !important;
+        margin-bottom: 6rem !important; }
+
+  .composition {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; }
+    .composition__photo {
+      position: relative !important;
+      width: 100% !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: auto !important; }
+
+  .feature-box {
+    padding: 2rem; }
+
+  .card {
+    height: auto;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    background-color: #fff; }
+    .card__side {
+      height: auto;
+      position: relative;
+      box-shadow: none; }
+      .card__side--back {
+        transform: rotateY(0);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%); }
+    .card:hover .card__side--front {
+      transform: rotateY(0); }
+    .card__cta {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      width: 100%;
+      padding: 4rem 0; }
+    .card__price-box {
+      margin-bottom: 2rem; }
+    .card__price-value {
+      font-size: 4rem; }
+
+  .story {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 4rem;
+    transform: skewX(0); }
+    .story > * {
+      transform: skewX(0); }
+    .story__shape {
+      transform: translateX(0) skewX(0);
+      float: none;
+      margin: 0 auto 2rem auto; }
+    .story__text {
+      transform: skewX(0); }
+
+  .section-about {
+    padding: 20rem 0 10rem 0; }
+
+  .section-features {
+    padding: 10rem 0; }
+
+  .section-tours {
+    padding: 15rem 0 10rem 0; }
+
+  .section-stories {
+    padding: 10rem 0; }
+
+  .section-book {
+    padding: 10rem 0; }
+
+  .book {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg);
+    background-size: cover;
+    height: auto; }
+    .book__form {
+      width: 100%;
+      padding: 3rem; }
+
+  .footer {
+    padding: 8rem 0; }
+    .footer__navigation {
+      width: 100%;
+      text-align: center; }
+    .footer__copyright {
+      width: 100%;
+      float: none;
+      text-align: center; }
+
+  .popup__content {
+    width: 95%; }
+  .popup__left {
+    display: none; }
+  .popup__right {
+    width: 100%;
+    padding: 3rem; }
+  .popup__text {
+    column-count: 1; }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .heading-primary__main {
+    font-size: 3.2rem;
+    letter-spacing: 1rem; }
+
+  .heading-primary__sub {
+    font-size: 1.4rem;
+    letter-spacing: 0.5rem; }
+
+  .heading-primary {
+    margin-bottom: 4rem; }
+
+  .heading-secondary {
+    font-size: 2.5rem; }
+
+  .u-margin-bottom-big {
+    margin-bottom: 4rem !important; }
+
+  .section-about {
+    margin-top: -15vh; }
+
+  .form__radio__group {
+    width: 100%;
+    margin-bottom: 1.5rem; }
+}
